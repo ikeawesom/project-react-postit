@@ -15,3 +15,12 @@ Tutorial by [developedbyed](https://www.youtube.com/watch?v=4xduSsxa5Os).
 - Prisma
 - NextAuthJS
 - PostgreSQL (Railway)
+
+#### Notes
+
+Commands to take note:
+```
+npx prisma migrate dev
+```
+npm i @auth/prisma-adapter
+```
