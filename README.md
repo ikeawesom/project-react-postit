@@ -19,11 +19,11 @@ Tutorial by [developedbyed](https://www.youtube.com/watch?v=4xduSsxa5Os).
 ### Notes
 
 1. Start project with this command. Use <b>Typescript</b> and <b>Tailwind CSS</b>.
-```typescript
+```javascript
 npx create-next-app@latest
-```typescript
+```javascript
 2. Remove unnecessary code from sample files.
-```typescript
+```javascript
 import Image from 'next/image'
 
 export default function Home() {
@@ -57,9 +57,9 @@ export default function Home() {
     </main>
   )
 }
-```typescript
+```javascript
 to something like this.
-```typescript
+```javascript
 export default function Home() {
   return (
     <main className="py-10 px-10 text-9xl">
@@ -67,17 +67,17 @@ export default function Home() {
     </main>
   );
 }
-```typescript
+```javascript
 
 3. Follow this [Prisma Guide](https://www.prisma.io/docs/getting-started/quickstart) to set up Prisma for the NextJS project.
 
 4. Add this to your <b>client.js</b> file in /prisma.
 
-```typescript
+```javascript
 import { PrismaClient } from "@prisma/client"
 
 const client = globalThis.prisma || new PrismaClient()
 if (process.env.NODE_ENV !== "production") globalThis.prisma = client
 
 export default client
-```typescript
+```javascript
