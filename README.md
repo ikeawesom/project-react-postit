@@ -15,6 +15,7 @@ Tutorial by [developedbyed](https://www.youtube.com/watch?v=4xduSsxa5Os).
 - Prisma
 - NextAuthJS
 - PostgreSQL (Railway)
+- Google Cloud
 
 ### Notes
 
