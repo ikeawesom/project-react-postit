@@ -67,7 +67,7 @@ export default function Home() {
     </main>
   );
 }
-```
+```test```
 
 3. Follow this [Prisma Guide](https://www.prisma.io/docs/getting-started/quickstart) to set up Prisma for the NextJS project.
 
