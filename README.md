@@ -67,12 +67,13 @@ export default function Home() {
     </main>
   );
 }
-```test```
+```
 
 3. Follow this [Prisma Guide](https://www.prisma.io/docs/getting-started/quickstart) to set up Prisma for the NextJS project.
 
 4. Add this to your <b>client.js</b> file in /prisma.
-```
+
+```javascript
 import { PrismaClient } from "@prisma/client"
 
 const client = globalThis.prisma || new PrismaClient()
