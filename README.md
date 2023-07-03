@@ -7,10 +7,12 @@ Tutorial by [developedbyed](https://www.youtube.com/watch?v=4xduSsxa5Os).
 ## Tech Stack
 
 ### Front-End
+
 - ReactJS
 - TailwindCSS
 
 ### Backend
+
 - NextJS
 - Prisma
 - NextAuthJS
@@ -20,13 +22,15 @@ Tutorial by [developedbyed](https://www.youtube.com/watch?v=4xduSsxa5Os).
 ### Notes
 
 1. Start project with this command. Use <b>Typescript</b> and <b>Tailwind CSS</b>.
+
 ```javascript
 npx create-next-app@latest
 ```
 
 2. Remove unnecessary code from sample files.
+
 ```javascript
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -36,17 +40,14 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className="font-mono font-bold">app/page.tsx</code>
         </p>
-        .
-        .
-        .
-        <a
+        . . .<a
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
+            Deploy{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -57,11 +58,12 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
 ```
 
 to something like this.
+
 ```javascript
 export default function Home() {
   return (
@@ -77,26 +79,29 @@ export default function Home() {
 4. Add this to your <b>client.js</b> file in /prisma.
 
 ```javascript
-import { PrismaClient } from "@prisma/client"
+import { PrismaClient } from "@prisma/client";
 
-const client = globalThis.prisma || new PrismaClient()
-if (process.env.NODE_ENV !== "production") globalThis.prisma = client
+const client = globalThis.prisma || new PrismaClient();
+if (process.env.NODE_ENV !== "production") globalThis.prisma = client;
 
-export default client
+export default client;
 ```
 
 5. Migrate to Railway
+
 ```console
 npx prisma migrate dev
 ```
 
 6. For <b>NextAuthJS</b>, the following steps can be complicated.
+
 ```console
 npm install next-auth
 npm install @prisma/client @next-auth/prisma-adapter
 ```
 
 Add this to [pages/api/auth/[...nextauth].js](/pages/api/auth).
+
 ```javascript
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
@@ -116,7 +121,7 @@ export const authOptions = {
     }),
     // ...add more providers here
   ],
-}
+};
 
 export default NextAuth(authOptions);
 ```
